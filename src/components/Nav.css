@@ -1,0 +1,14 @@
+.Nav .NavItem a {
+  color: rgb(250, 146, 66);
+  margin: 10px;
+  text-decoration: none;
+  
+}
+.Nav .NavMoth {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.NavItem {
+  list-style-type: none;
+}
