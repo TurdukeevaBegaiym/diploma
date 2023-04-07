@@ -22,3 +22,6 @@
 .Layout .logo {
   max-width: 100px;
 }
+.logo img {
+  width: 80px;
+}
