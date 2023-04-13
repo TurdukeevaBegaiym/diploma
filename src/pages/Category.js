@@ -1,16 +1,13 @@
 import { useMatch } from "react-router";
 import NotFound from "./NotFound";
+import { useContext } from "react";
+import { AppContext } from "../App";
+import ProductList from "../components/productList/ProductList";
 
 export default function Category () {
-  const params = useMatch("/categories/:slug");
+  const {params} = useMatch("/categories/:slug");
 
-  const categories = [
-    { id: 1, name: "Season Flower", slug:"season-flower"},
-    { id: 2, name: "Bouquets", slug:"bouquets"},
-    { id: 3, name: "Symbolism:", slug:"symbolism:"},
-    { id: 4, name: "Type:", slug:"type:"},
-    { id: 4, name: "Baskets:", slug:"baskets:"},
-  ];
+  const {categories} = useContext(AppContext);
 
   const category = categories.find (
     (category) => category.slug === params.slug
@@ -22,7 +19,8 @@ export default function Category () {
 
   return (
     <div className="Category">
-      <h1>{Category.name}</h1>
+      <h1>{category.name}</h1>
+      <ProductList></ProductList>
     </div>
   )
 }
