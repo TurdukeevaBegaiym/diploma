@@ -12,23 +12,13 @@
   grid-area: header;
   background-color: burlywood;
 }
-header {
-  position:fixed;
-  top: 0;left: 0;right: 0;
-  background-color: #fff;
-  padding: 1REM 5%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1;
-}
 .Layout aside {
   grid-area: aside;
-  margin-top: 100px;
+
 }
 .Layout main {
   grid-area: main;
-  margin-top: 100px;
+  
 }
 .Layout footer {
   grid-area: footer;
@@ -45,5 +35,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: hsl(317 100% 54%) ;
 
 }
