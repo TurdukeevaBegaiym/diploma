@@ -1,8 +1,26 @@
+:root {
+  --clr-neon:hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+  --clr-white:hsl(0, 0%, 100%);
+
+}
 .Nav .NavItem a {
   color: white;
   margin: 30px;
   text-decoration: none;
-  
+  color: var(--clr-neon);
+  border:  currentColor 0.125em solid;
+  padding: 0.25em 1.25em;
+  font-size: 1rem;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.125em hsl(317 100% 54%), 0 0 0.45em currentColor;
+  box-shadow: 0 0 0.42em hsl(317 100% 54%), 0 0 0.45em currentColor, inset 0 0 0.5em var(--clr-neon);
+
+}
+.Nav .NavItem a:hover {
+  background:var(--clr-neon);
+  color: var(--clr-white);
 }
 .Nav .NavMoth {
   display: flex;
@@ -12,3 +30,10 @@
 .NavItem {
   list-style-type: none;
 }
+
+.Nav {
+  background:  var(--clr-bg);
+  border: var(--clr-neon) 4px;
+  
+}
+
