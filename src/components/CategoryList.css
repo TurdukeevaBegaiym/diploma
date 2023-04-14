@@ -1,0 +1,15 @@
+.CategoryList ul {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  
+}
+.CategoryList a {
+  text-decoration: none;
+  text-align: start;
+}
+ .CategoryList {
+  background-color: var(--clr-bg);
+  margin: 0;
+ }
