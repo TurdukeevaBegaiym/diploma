@@ -2,6 +2,7 @@ import { useContext } from "react";
 import "./ProductList.css";
 import { AppContext } from "../../App";
 import { NavLink } from "react-router-dom";
+import AddToCart from "../AddToCart/AddToCart";
 
 export default function ProductList ({category}) {
   const {products} = useContext(AppContext);
@@ -10,10 +11,11 @@ export default function ProductList ({category}) {
   .map(product => (
     <div key={product.id} className="Product">
       <img src = {product.picture} alt={product.name}/>
-      <NavLink to={'/product/' + product.slug}>
+      <NavLink to={'/products/' + product.slug}>
         {product.name}
       </NavLink>
-      <span>{product.price} som</span>
+      <span>{product.price} $</span>
+      <AddToCart product={product}/>
     </div>
   ))
 
