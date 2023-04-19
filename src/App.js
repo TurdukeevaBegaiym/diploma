@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Layout from "./components/Layout";
+import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
@@ -10,15 +10,20 @@ import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore";
 import { categoryCollection, productsCollection } from "./firebase";
 import Product from "./pages/Product";
+import Cart from "./pages/Cart";
 
 export const AppContext = createContext({
   categories: [],
   products: [],
+  //  контекст для корзины
+  cart: {},
+  setCart: () => {},
 });
 
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState({});
 
   useEffect(() => {
     // выполнить только однажды
@@ -43,7 +48,7 @@ function App() {
           docs.map((doc) => ({
             // новый массив
             ...doc.data(), // из свойств name, slug
-            id: doc.id  // и свойства id
+            id: doc.id, // и свойства id
           }))
         );
       });
@@ -51,10 +56,11 @@ function App() {
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products }}>
+      <AppContext.Provider value={{ categories, products, cart, setCart }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} exact />
+            <Route path="/cart" element={<Cart />}/>
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/delivery" element={<Delivery />} />
