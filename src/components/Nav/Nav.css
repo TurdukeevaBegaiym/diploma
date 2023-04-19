@@ -1,0 +1,32 @@
+:root {
+  --clr-neon:hsl( 30, 4%, 54%);
+  --clr-bg: hsl(150, 100%, 97%);
+  --clr-brown:hsl(10, 9%, 33%);
+
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+
+}
+.navmonth {
+    background-color: var(--clr-bg) ;
+}
+
+.NavItem a {
+  color: white;
+  margin: 30px;
+  text-decoration: none;
+  color: var(--clr-brown);
+  border:  0.125em solid black;
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+  border-radius: 0.125em;
+
+ /* text-shadow: 0 0 0.125em hsl(317 100% 54%), 0 0 0.45em currentColor;
+  box-shadow: 0 0 0.42em hsl(317 100% 54%), 0 0 0.45em currentColor, inset 0 0 0.5em var(--clr-neon);*/
+
+}
+
+
+
