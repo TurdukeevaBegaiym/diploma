@@ -8,6 +8,7 @@
 .CategoryList a {
   text-decoration: none;
   text-align: start;
+  color: var(--clr-brown);
 }
  .CategoryList {
   background-color: var(--clr-bg);

@@ -13,7 +13,7 @@ import Product from "./pages/Product";
 
 export const AppContext = createContext({
   categories: [],
-  products: []
+  products: [],
 });
 
 function App() {
@@ -21,29 +21,29 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    //вsполнить только однажды
-    getDocs(categoryCollection) //получить категории
+    // выполнить только однажды
+    getDocs(categoryCollection) // получить категории
       .then(({ docs }) => {
         // когда категории загрузились
         setCategories(
-          //  обновить состояние
+          // обновить состояние
           docs.map((doc) => ({
-            //  новый массив
-            ...doc.data(), //из свойств нейм
-            id: doc.id, // и свойство айди
+            // новый массив
+            ...doc.data(), // из свойств name, slug
+            id: doc.id, // и свойства id
           }))
         );
       });
 
-      getDocs(productsCollection) //получить категории
+    getDocs(productsCollection) // получить категории
       .then(({ docs }) => {
         // когда категории загрузились
         setProducts(
-          //  обновить состояние
+          // обновить состояние
           docs.map((doc) => ({
-            //  новый массив
-            ...doc.data(), //из свойств нейм
-            id: doc.id, // и свойство айди
+            // новый массив
+            ...doc.data(), // из свойств name, slug
+            id: doc.id  // и свойства id
           }))
         );
       });
@@ -60,7 +60,7 @@ function App() {
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/categories/:slug" element={<Category />} />
 
-            <Route path="/products/:slug" element={<Product/>} />
+            <Route path="/products/:slug" element={<Product />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>

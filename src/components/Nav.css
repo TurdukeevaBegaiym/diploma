@@ -1,40 +1,32 @@
 :root {
-  --clr-neon:hsl(292, 78%, 78%);
-  --clr-bg: hsl(46, 61%, 82%);
-  --clr-white:hsl(0, 33%, 98%);
+  --clr-neon:hsl( 30, 4%, 54%);
+  --clr-bg: hsl(150, 100%, 97%);
+  --clr-brown:hsl(10, 9%, 33%);
 
 }
-.Nav .NavMoth {
+nav ul {
   display: flex;
-  justify-content:space-evenly;
+  list-style-type: none;
+
+}
+.navmonth {
+    background-color: var(--clr-bg) ;
 }
 
-.Nav {
-  background:  var(--clr-bg);
-  border: var(--clr-neon) 4px;
-
-  
-}
-
-.Nav .NavItem a {
+.NavItem a {
   color: white;
   margin: 30px;
   text-decoration: none;
-  color: var(--clr-neon);
-  border:  currentColor 0.125em solid;
+  color: var(--clr-brown);
+  border:  0.125em solid black;
   padding: 0.5em 1.5em;
   font-size: 1rem;
-  border-radius: 0.25em;
+  border-radius: 0.125em;
 
-  text-shadow: 0 0 0.125em hsl(317 100% 54%), 0 0 0.45em currentColor;
-  box-shadow: 0 0 0.42em hsl(317 100% 54%), 0 0 0.45em currentColor, inset 0 0 0.5em var(--clr-neon);
+ /* text-shadow: 0 0 0.125em hsl(317 100% 54%), 0 0 0.45em currentColor;
+  box-shadow: 0 0 0.42em hsl(317 100% 54%), 0 0 0.45em currentColor, inset 0 0 0.5em var(--clr-neon);*/
 
 }
-.Nav ul {
- list-style-type: none;
-}
-.Nav .NavItem a:hover {
-  background:var(--clr-neon);
-  color: var(--clr-white);
-}
+
+
 

@@ -7,9 +7,9 @@ export default function Layout (props) {
   return (
     <div className="Layout">
       <header>
-        <div className="nav-container">
+        <div className="navmonth">
         <Logo/>
-        <Nav/>
+        <Nav/> 
         </div>
       </header>
       <aside>
@@ -17,7 +17,7 @@ export default function Layout (props) {
       </aside>
       <main>
         {props.children}
-        CONTENT
+        
       </main>
       <footer>
         FOOTER

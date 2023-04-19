@@ -37,10 +37,7 @@ body {
 .logo img {
   width: 80px;
 }
-.nav-container {
+.navmonth {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-color: hsl(317 100% 54%) ;
-
 }

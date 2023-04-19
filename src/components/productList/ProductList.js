@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 export default function ProductList ({category}) {
   const {products} = useContext(AppContext);
-
+  
   const output = products.filter(product => product.category === category.id)
   .map(product => (
     <div key={product.id} className="Product">
