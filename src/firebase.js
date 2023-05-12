@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { collection, getFirestore } from "firebase/firestore";
+import { getFirestore, collection, onSnapshot } from "firebase/firestore";
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import {
   GoogleAuthProvider,
   getAuth,
@@ -15,13 +16,15 @@ const firebaseConfig = {
   projectId: "diploma-8ed24",
   storageBucket: "diploma-8ed24.appspot.com",
   messagingSenderId: "837911943402",
-  appId: "1:837911943402:web:3a3ee4d2a76fa612771f93",
+  appId: "1:65197132264:web:94ebb98415dca05ea07c5d",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app); //BASE DANNA
+export const db = getFirestore(app);
 const auth = getAuth(app);
+export const storage = getStorage(app);
+
 
 // получить список категорий (коллекция документов).
 export const categoryCollection = collection(db, "diploma");
@@ -29,7 +32,34 @@ export const productsCollection = collection(db, "products");
 export const ordersCollection = collection(db, "orders");
 
 const provider = new GoogleAuthProvider();
-export const signIn = () => signInWithPopup(auth, provider);
-export const signOff = () => signOut(auth);
-
+export const logIn = () => signInWithPopup(auth, provider);
+export const logOut = () => signOut(auth);
 export const onAuthChange = (callback) => onAuthStateChanged(auth, callback);
+
+
+export const onProductsLoad = (callback) =>
+  onSnapshot(productsCollection, (snapshot) =>
+    callback(
+      snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }))
+    )
+  );
+export const onOrdersLoad = (callback) =>
+  onSnapshot(ordersCollection, (snapshot) =>
+    callback(
+      snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }))
+    )
+  );
+
+  export const uploadProductPhoto = async (file) => {
+    const storageRef = ref(storage, `products/${file.name}`);
+    await uploadBytes(storageRef, file);
+  
+    const url = await getDownloadURL(storageRef);
+    return url;
+  };

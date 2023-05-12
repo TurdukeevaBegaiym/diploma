@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/retinaflower.png";
+import logo from "../../assets/logo.svg";
 import "./Nav.css";
 
 
 export default function Nav () {
   return (
-    <nav>
+    <nav className="Nav">
       <ul> 
         <li className="NavItem">
           <NavLink to="/">Home</NavLink>
@@ -13,9 +13,6 @@ export default function Nav () {
         <li className="NavItem">
           <NavLink to="/about">About</NavLink>
         </li>
-        <NavLink to="logo">
-          <img src={logo} alt="logo" className="logo"></img>
-        </NavLink>
         <li className="NavItem">
           <NavLink to="/contacts">Contacts</NavLink>
         </li>

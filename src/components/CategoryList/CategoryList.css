@@ -17,4 +17,8 @@
  .CategoryList {
   background-color: var(--clr-bg);
   margin: 0;
+  padding: 0;
+  width: 100%;
+  
+  
  }
