@@ -25,8 +25,9 @@
  
 }
 .NavItem:hover {
-    border-bottom: 2px solid black; /* добавляем границу снизу толщиной 2px и цветом черный */
-    border-color:  #E01761;;
+    border-bottom: 5px solid ; /* добавляем границу снизу толщиной 2px и цветом черный */
+    border-color:  #E01761;
+
   }
 
 
