@@ -20,12 +20,16 @@
   margin: 30px;
   text-decoration: none;
   color: var(--clr-brown);
-  border:  0.125em solid black;
   padding: 0.5em 1.5em;
   font-size: 1rem;
-  border-radius: 0.125em;
  
 }
+.NavItem:hover {
+    border-bottom: 2px solid black; /* добавляем границу снизу толщиной 2px и цветом черный */
+    border-color:  #E01761;;
+  }
+
+
 
 @media (max-width: 550px) {
   .Nav ul {

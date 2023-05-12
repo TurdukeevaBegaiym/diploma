@@ -7,6 +7,16 @@
   
 
 }
-.ProductList .Product img {
+/*.ProductList .Product img {
+  width: 100%;
+}
+.ProductList img {
+  width: 300px;
+  height: 300px;
+}*/
+.Product {
+  width: 500px;
+}
+.Product img {
   width: 100%;
 }
