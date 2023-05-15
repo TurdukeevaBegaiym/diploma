@@ -3,9 +3,12 @@
 }
 body {
   margin: 0;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-weight: 700;
   
 }
-.Layout {
+/*.Layout {
   display: grid;
   grid-template-areas:
   "header header"
@@ -13,12 +16,30 @@ body {
   "footer footer";
   grid-template-columns: 200px 1fr;
 
-}
+}*/
+
 .Layout {
   max-width: 1200px;
   margin: 0 auto;
 
 }
+.Layout .content-wrapper {
+  max-width: 1200px;
+}
+.content-wrapper {
+  display: flex;
+
+}
+
+aside {
+  flex: 1 0 20%;
+}
+
+main {
+  flex: 3 0 80%;
+}
+
+
 
 
 header, main, aside, footer {
@@ -60,6 +81,7 @@ header, main, aside, footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 10px 10px;
 
 }
 header {
@@ -69,4 +91,7 @@ header {
 }
 aside {
   margin-top: 0;
+}
+.icon {
+  display: flex;
 }
