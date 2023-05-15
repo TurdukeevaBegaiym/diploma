@@ -1,3 +1,10 @@
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
 .CategoryList ul {
   display: flex;
   flex-direction: column;
@@ -11,14 +18,20 @@
   color: var(--clr-brown);
   
 }
-.CategoryList ul li {
-  margin-bottom: 20px;
-}
  .CategoryList {
-  background-color: var(--clr-bg);
+  /*background-color: var(--clr-bg);*/
   margin: 0;
   padding: 0;
   width: 100%;
+  padding: 10px 20px;
+  border-bottom: 2px solid palevioletred;
+  border-left: 2px solid #000;
+  border-top: 1px solid #000;
+  border-right: 1px solid saddlebrown;
+  --skew-angle: -5deg;
+                
+  
   
   
  }
+ 
