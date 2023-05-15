@@ -7,7 +7,6 @@ export default function About () {
         <h2 className="card-title">Something about us
         </h2>
         <p className="card-body">Lorem imsum kjhxg bxhvsgbkjbhs jxbshvhg </p>
-        <a href="#" className="button">Learn More</a>
       </div>
       </div>
     </div>
