@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { logIn, logOut } from "../../firebase";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
+import cartIcon from '../../assets/avatar.png';
 
 export default function Auth() {
   const { user } = useContext(AppContext);
@@ -15,9 +16,13 @@ export default function Auth() {
         </span>
       ) : (
         <span>
-          Hello guest!
-          <button  onClick={logIn} >Sign in</button>
+          <img
+            src={cartIcon}
+            alt="Sign in"
+            onClick={logIn}
+          />
         </span>
+        
       )}
     </div>
   );
