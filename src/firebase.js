@@ -36,6 +36,16 @@ export const logIn = () => signInWithPopup(auth, provider);
 export const logOut = () => signOut(auth);
 export const onAuthChange = (callback) => onAuthStateChanged(auth, callback);
 
+export const onCategoriesLoad = (callback) =>
+  onSnapshot(categoryCollection, (snapshot) =>
+    callback(
+      snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }))
+    )
+  );
+
 
 export const onProductsLoad = (callback) =>
   onSnapshot(productsCollection, (snapshot) =>
@@ -63,3 +73,4 @@ export const onOrdersLoad = (callback) =>
     const url = await getDownloadURL(storageRef);
     return url;
   };
+  
