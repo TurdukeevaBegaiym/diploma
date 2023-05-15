@@ -1,16 +1,17 @@
-import { useContext } from "react";
+
 import "./CartLink.css";
-import { AppContext } from "../../App";
-import { NavLink } from "react-router-dom";
+import cartIcon from '../../assets/carttss.png';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-export default function CartLink() {
-  const { cart } = useContext(AppContext);
-
-  const total = Object.values(cart).reduce((acc, num) => acc + num, 0);
-
+const CartLink = ({ total }) => {
   return (
-    <div className="CartLink">
-      <NavLink to="/cart">Cart ({total})</NavLink>
-    </div>
-  );  
-}
+    <React.Fragment>
+      <NavLink to="/cart">
+        <img src={cartIcon} alt="Cart" />
+      </NavLink>
+    </React.Fragment>
+  );
+};
+
+export default CartLink;
