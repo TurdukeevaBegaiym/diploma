@@ -2,10 +2,6 @@
 import './Home.css';
 import homeimg from '../assets/bycyclee.jpg';
 
-function plusSlides(n) {
-
-}
-
 
 export default function Home() {
   return (
