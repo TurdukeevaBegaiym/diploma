@@ -6,12 +6,18 @@ body {
 }
 
 .CategoryList ul {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
   list-style-type: none;
+  padding: 0;
+  margin: 0;
  
  
 }
+.CategoryList li {
+  margin-bottom: 10px;
+}
+
 .CategoryList a {
   text-decoration: none;
   text-align: start;
@@ -19,7 +25,8 @@ body {
   
 }
  .CategoryList {
-  /*background-color: var(--clr-bg);*/
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -34,4 +41,17 @@ body {
   
   
  }
+
+ @media screen and(max-width:1152px) {
+  .CategoryList {
+    width: 57px;
+    transition: .3s;
+    
+  }
+
+  .CategoryList li {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
  
