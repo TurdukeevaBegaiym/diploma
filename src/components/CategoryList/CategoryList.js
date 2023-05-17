@@ -16,8 +16,8 @@ export default function CategoryList() {
   ));
 
   return (
-    <div className="CategoryList">
+    <nav className="CategoryList">
       <ul>{output}</ul>
-    </div>
+    </nav>
   );
 }
