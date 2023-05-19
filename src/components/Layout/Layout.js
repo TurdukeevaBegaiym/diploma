@@ -17,23 +17,6 @@ export default function Layout (props) {
   }
   return (
     <div className="Layout">
-      <head>
-        <link
-          rel="preconnect"
-          href="https://fonts.googleapis.com"
-          crossorigin
-        />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      
       <header>
         <div className="navmonth">
         <Logo/>
