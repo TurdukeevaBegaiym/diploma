@@ -32,7 +32,7 @@ export default function Home() {
       <section>
         <div className="wrapper">
           <div className='video'>
-          <iframe  src="https://www.youtube.com/embed/n8T3cmb8kJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe  src="https://www.youtube.com/embed/n8T3cmb8kJo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen=""></iframe>
 
           </div>
         </div>
