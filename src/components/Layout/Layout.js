@@ -10,6 +10,9 @@ import NavToggle from "../NavToggle/NavToggle";
 import Drawer from "../Drawer/Drawer";
 import insta from "../../assets/insta.png";
 import linke from "../../assets/linke.png";
+import face from "../../assets/facebook.png";
+import git from "../../assets/git.png";
+import logo from "../../assets/logos.png"
 export default function Layout (props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -47,21 +50,26 @@ export default function Layout (props) {
       </div>
       <div class="col-4">
         <h4>Contact</h4>
-        <p>Phone: +123456789</p>
+        <p>Phone: +996708026312</p>
         <p>Email: info@flowershop.com</p>
         <p>Address: Flower Street, 123, City</p>
       </div>
       <div class="col-4">
-        <h4>Follow Us</h4>
+        <h4 className="follow">Follow Us</h4>
         <div class="social-media">
            <img src={insta} alt="instagram" className="insta" />    
-           <img src={linke} alt="linkedin" className="linke" />            
+           <img src={linke} alt="linkedin" className="linke" />    
+           <img src={face} alt="face" className="face" />   
+           <img src={git} alt="git" className="git" />  
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
+        
         <p class="text-center">&copy; 2023 Flower Shop. All rights reserved.</p>
+        
+        <img src={logo} alt="logo" className="logo two" />
       </div>
     </div>
   </div>
