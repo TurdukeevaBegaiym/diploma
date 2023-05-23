@@ -1,7 +1,18 @@
 .CartList .CartItem {
   display: flex;
   align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin: 20px 10px;
+  
 }
 .CartList .CartItem img {
   width: 80px;
+}
+.input  {
+  width: 40px;
+
+}
+.CartItem {
+  padding: 20px 20px;
 }
