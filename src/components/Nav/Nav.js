@@ -4,8 +4,8 @@ import "./Nav.css";
 
 export default function Nav () {
   return (
-    <nav className="Nav">
-      <ul> 
+    <nav className="nav">
+      <ul className="navs"> 
         <li className="NavItem">
           <NavLink to="/">Home</NavLink>
         </li>
