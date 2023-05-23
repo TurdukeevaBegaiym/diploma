@@ -4,37 +4,33 @@
   --clr-brown:hsl(10, 9%, 33%);
 
 }
-.Nav ul {
+.navs {
   display: flex;
   list-style-type: none;
- 
+  margin: 0  50px;
   
-
 }
+
+
+
 .navmonth {
     background-color: var(--clr-bg) ;
 }
 
 .NavItem a {
   color: white;
-  margin: 30px;
   text-decoration: none;
   color: var(--clr-brown);
-  padding: 0.5em 1.5em;
+  padding: 5px 45px ;
   font-size: 1rem;
   font-size: 24px;
  
 }
-.NavItem:hover {
-    border-bottom: 5px solid ; /* добавляем границу снизу толщиной 2px и цветом черный */
-    border-color:  #E01761;
-
-  }
 
 
 
 @media (max-width: 550px) {
-  .Nav ul {
+  .nav .navs {
     flex-direction: column;
     margin: 1rem 0;
   }
