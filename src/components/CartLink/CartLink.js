@@ -1,6 +1,6 @@
 
 import "./CartLink.css";
-import cartIcon from '../../assets/carttss.png';
+import cartIcon from '../../assets/cart.png';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
