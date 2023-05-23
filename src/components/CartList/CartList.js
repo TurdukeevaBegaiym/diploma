@@ -29,13 +29,14 @@ export default function CartList() {
         <Link to={"/products/" + product.slug}>{product.name}</Link>
 
         <input
+        className="input"
           type="number"
           value={cart[product.id]}
           min={1}
           onChange={(event) => onQuantityChange(product, +event.target.value)}
         />
 
-        <span>{cart[product.id] * product.price} $</span>
+        <span> ${cart[product.id] * product.price} </span>
 
         <button onClick={() => onItemRemove(product)}>Remove</button>
       </div>
