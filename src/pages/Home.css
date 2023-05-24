@@ -29,6 +29,11 @@ body {
   max-width: 50rem;
   margin-inline: auto;
   padding-inline: 1rem;
+  
+}
+.three {
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-title {
@@ -55,6 +60,7 @@ section {
 
   position: relative;
   isolation: isolate;
+  
 }
 
 .diagonal::after {
@@ -171,9 +177,19 @@ section {
   }
 }
 
+.diogana {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.three p {
+  font-size: 14px;
+}
+.three h1 {
+  font-size: 14px;
+}
+.video {
+ 
 
-
-
-
-
+}
 
