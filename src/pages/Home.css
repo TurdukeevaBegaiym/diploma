@@ -188,12 +188,12 @@ section {
 .three h1 {
   font-size: 14px;
 }
-/* Before */
+
 .wrapper {
   justify-content: end;
 }
 
-/* After */
+
 .wrapper {
   justify-content: flex-end;
 }
