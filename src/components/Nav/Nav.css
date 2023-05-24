@@ -6,9 +6,7 @@
 }
 .navs {
   display: flex;
-  list-style-type: none;
-  margin: 0  50px;
-  
+  list-style-type: none;  
 }
 
 
@@ -29,7 +27,7 @@
 
 
 
-@media (max-width: 550px) {
+@media (max-width: 800px) {
   .nav .navs {
     flex-direction: column;
     margin: 1rem 0;
