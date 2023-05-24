@@ -4,8 +4,8 @@ import insta from "../../assets/insta.png";
 import linke from "../../assets/linke.png";
 import face from "../../assets/facebook.png";
 import git from "../../assets/git.png";
-import logo from "../../assets/logos.png"
-import "./Footer.css"
+import logo from "../../assets/logos.png";
+import "./Footer.css";
 
 const Footer = () => {
   return (
