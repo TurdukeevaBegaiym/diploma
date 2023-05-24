@@ -1,0 +1,17 @@
+.email {
+  display: flex;
+  align-items: center;
+
+}
+a  {
+  text-decoration: none;
+
+}
+.phone {
+  display: flex;
+  align-items: center;
+
+}
+.Contact {
+  padding: 0 20px;
+}
