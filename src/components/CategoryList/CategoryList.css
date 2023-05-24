@@ -22,7 +22,8 @@ body {
   text-decoration: none;
   text-align: start;
   color: var(--clr-brown);
-  font-size: 24px
+  font-size: 24px;
+  transition: margin-right 2s ease-in-out;
   
 }
  .CategoryList {
