@@ -1,6 +1,6 @@
 .CartList .CartItem {
   display: flex;
-  align-items: center;
+  align-items: end;
   align-content: center;
   justify-content: space-between;
   margin: 20px 10px;
