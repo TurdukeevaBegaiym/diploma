@@ -1,0 +1,52 @@
+footer {
+  max-width: 1200px;
+  height: auto;
+  background-color: var(--clr-bg) ;
+}
+ .row {
+  display: flex;
+  padding: 50px 0;
+ }
+
+ .row-2 {
+  display: flex;
+  padding: 50px 0;
+  flex-wrap: wrap;
+ }
+
+ .col-4 {
+  flex: 33%;
+  max-width: 33%;
+}
+ 
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.col-12 {
+  width: 100%;
+}
+.social-media img  {
+  width: 50px;
+  height:50px;
+  color: aqua;
+}
+.follow {
+  padding: 0 10px;
+}
+
+.logo.two {
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  
+}
+.text-center {
+  text-align: center;
+} 
+
+@media (max-width: 800px) {
+  .row-2 {
+    flex-wrap: wrap;
+  }
+}
