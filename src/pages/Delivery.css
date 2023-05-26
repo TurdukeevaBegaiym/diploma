@@ -1,0 +1,18 @@
+.delivery {
+  display: flex;
+  padding-bottom: 20px;
+}
+.delivery img {
+  width: 60%;
+}
+.Delivery h1 {
+  text-align: center;
+  margin-top: 0;
+  padding: 20px 0;
+  font-size: 24px;
+}
+.Delivery {
+  padding: 0 30px;
+  background-color: #fffaf3;
+  
+}
